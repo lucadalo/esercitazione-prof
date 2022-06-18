@@ -1,6 +1,7 @@
 const BASE_URL = 'http://localhost:3005/api/v1/restaurants',
     HEADERS = {"Content-Type": "application/json"};
 
+    
 export default {
     getAll: (next = null) => {
         return fetch(next ? BASE_URL + '/?next=' + next : BASE_URL + '/', {
